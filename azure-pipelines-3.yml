@@ -34,7 +34,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  projects: '$(Build.SourcesDirectory)/../Tests/PerfectBody.UnitTests/*.csproj'
+  projects: '$(Build.SourcesDirectory)/**/Tests/PerfectBody.UnitTests/*.csproj'
 
 steps:
   - task: NuGetToolInstaller@1

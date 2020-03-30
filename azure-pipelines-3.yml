@@ -32,6 +32,12 @@ trigger:
 pool:
   vmImage: "macOS-10.14"
 
+variables:
+  - name: buildConfiguration
+    value: "Release"
+  - name: projects
+    value: '$(Build.SourcesDirectory)/Tests/PerfectBody.UnitTests/*.csproj'  
+
 steps:
   - task: NuGetToolInstaller@1
 
